@@ -1,0 +1,114 @@
+[
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1576110203177,
+		"sourceCode": "/* ==UserStyle==\n@name           fjacosta_mx Oracle Confluence Dracula Theme\n@namespace      github.com/openstyles/stylus\n@version        1.0.0\n@description    A new userstyle\n@author         Me\n@var color bg-color \"BG color\" #282a36\n@var color fg-color \"FG color\" #f8f8f2\n@var color dracu-current \"Dracula current\" #44475a\n@var color dracu-comment \"Dracula comment\" #6272a4\n@var color dracu-selection \"Dracula selection\" #44475a\n@var color dracu-purple \"Dracula Purple\" #bd93f9\n@var color dracu-orange \"Dracula Orange\" #ffb86c\n@var color dracu-pink \"Dracula Pink\" #ff79c6\n@var color dracu-cyan \"Dracula Cyan\" #8be9fd\n@var color dracu-yellow \"Dracula Yellow\" #f1fa8c\n\n==/UserStyle== */\n\n@-moz-document regexp(\"https://confluence.oraclecorp.com/.+\") {\n    .aui-page-panel, #header .aui-header,\n    #main #main-header.overlay-header,\n    .theme-default .ia-splitter #footer,\n    #footer-logo {\n        background: var(--bg-color);\n        background-color: var(--bg-color);\n        color: var(--fg-color);\n    }\n    \n    .cell {\n        display: none;\n    }\n    \n    .editor-default,\n    .editor-fullheight {\n        display: inline !important;\n    }\n    \n    .acs-side-bar,\n    .space-tools-section {\n        background-color: var(--dracu-current);\n    }\n    \n    body {\n        color: var(--fg-color);\n    }\n    \n    .aui-header .aui-dropdown2-trigger, \n    #header .aui-header .aui-nav-link, \n    #header .aui-header .aui-nav-imagelink, \n    #header .aui-header a,\n    .acs-nav-sections p,\n    .page-metadata-item a span {\n        color: var(--fg-color);\n    }\n    \n    .panel {\n        color: var(--fg-color);\n        border: 2px var(--dracu-purple);\n    }\n    \n    .acs-nav-list .acs-nav-item-label {\n        color: var(--fg-color);\n    }\n    \n    .space-favourite {\n        color: var(--dracu-orange);\n    }\n    \n    .aui-dropdown2.aui-style-default {\n        background-color: var(--bg-color);\n    }\n    \n    #header .aui-header a:hover, \n    .aui-dropdown2-in-header.aui-style-default a:hover, \n    .aui-header .aui-dropdown2-trigger.active,\n    .aui-dropdown2.aui-style-default:hover a:not(.aui-dropdown2-disabled):focus {\n        background-color: var(--dracu-orange) !important;\n        color: var(--bg-color) !important;\n    }\n    \n    .acs-side-bar .current-item .acs-nav-item-link,\n    li.acs-nav-item .acs-nav-item-link:focus {\n        background-color: var(--dracu-selection);\n    }\n    \n    li.acs-nav-item .acs-nav-item-link:hover {\n        background-color: var(--dracu-comment);\n        color: var(--dracu-orange);\n    }\n    \n    .acs-nav-item.profile .icon,\n    .acs-side-bar .acs-side-bar-content .acs-nav-list .icon {\n        background-color: var(--fg-color);\n    }\n    \n    #header .aui-header .aui-nav .aui-button-primary {\n        background-color: var(--dracu-yellow);\n        color: var(--bg-color) !important;\n    }\n    \n    .wiki-content a, \n    .wiki-content a:link, \n    a,\n    a:focus,\n    #likes-section, \n    .label-list, \n    .aui-button .aui-icon, \n    .aui-button.aui-button-subtle,\n    #likes-section .aui-iconfont-like, \n    content .acs-nav-list .icon {\n        color: var(--dracu-purple) !important;\n    }\n    \n    #title-text a, h2, h1, h5 {\n        color: var(--dracu-pink) !important;\n    }\n    \n    #title-text a {\n        color: var(--dracu-pink);\n        font-weight: 800;\n    }\n    \n    .page-metadata, .page-metadata ul li a:link {\n        color: var(--fg-color);\n    }\n    \n    .quick-comment-prompt,\n    body.mceContentBody {\n        background-color: var(--dracu-selection);\n        color: var(--fg-color);\n        border: 0px;\n    }\n    \n    #rte-toolbar {\n        background-color: var(--dracu-selection);\n        border-bottom: 0px;\n    }\n    \n    #rte-savebar {\n        border-top: 0px;\n    }\n    \n    .aui-button.aui-button-primary {\n        background-color: var(--dracu-orange);\n    }\n    \n    #comments-section .comment-body form .editor-container {\n        border: 0px;\n    }\n    \n    .confluence-information-macro-warning, \n    .confluence-information-macro-tip {\n        background-color: var(--dracu-yellow);\n        border: 0px;\n    }\n}",
+		"sections": [
+			{
+				"code": ":root {\n  --bg-color: rgb(40, 42, 54);\n  --fg-color: rgb(248, 248, 242);\n  --dracu-current: rgb(68, 71, 90);\n  --dracu-comment: rgb(98, 114, 164);\n  --dracu-selection: rgb(68, 71, 90);\n  --dracu-purple: rgb(189, 147, 249);\n  --dracu-orange: rgb(255, 184, 108);\n  --dracu-pink: rgb(255, 121, 198);\n  --dracu-cyan: rgb(139, 233, 253);\n  --dracu-yellow: rgb(241, 250, 140);\n}\n.aui-page-panel, #header .aui-header,\n    #main #main-header.overlay-header,\n    .theme-default .ia-splitter #footer,\n    #footer-logo {\n        background: var(--bg-color);\n        background-color: var(--bg-color);\n        color: var(--fg-color);\n    }\n    \n    .cell {\n        display: none;\n    }\n    \n    .editor-default,\n    .editor-fullheight {\n        display: inline !important;\n    }\n    \n    .acs-side-bar,\n    .space-tools-section {\n        background-color: var(--dracu-current);\n    }\n    \n    body {\n        color: var(--fg-color);\n    }\n    \n    .aui-header .aui-dropdown2-trigger, \n    #header .aui-header .aui-nav-link, \n    #header .aui-header .aui-nav-imagelink, \n    #header .aui-header a,\n    .acs-nav-sections p,\n    .page-metadata-item a span {\n        color: var(--fg-color);\n    }\n    \n    .panel {\n        color: var(--fg-color);\n        border: 2px var(--dracu-purple);\n    }\n    \n    .acs-nav-list .acs-nav-item-label {\n        color: var(--fg-color);\n    }\n    \n    .space-favourite {\n        color: var(--dracu-orange);\n    }\n    \n    .aui-dropdown2.aui-style-default {\n        background-color: var(--bg-color);\n    }\n    \n    #header .aui-header a:hover, \n    .aui-dropdown2-in-header.aui-style-default a:hover, \n    .aui-header .aui-dropdown2-trigger.active,\n    .aui-dropdown2.aui-style-default:hover a:not(.aui-dropdown2-disabled):focus {\n        background-color: var(--dracu-orange) !important;\n        color: var(--bg-color) !important;\n    }\n    \n    .acs-side-bar .current-item .acs-nav-item-link,\n    li.acs-nav-item .acs-nav-item-link:focus {\n        background-color: var(--dracu-selection);\n    }\n    \n    li.acs-nav-item .acs-nav-item-link:hover {\n        background-color: var(--dracu-comment);\n        color: var(--dracu-orange);\n    }\n    \n    .acs-nav-item.profile .icon,\n    .acs-side-bar .acs-side-bar-content .acs-nav-list .icon {\n        background-color: var(--fg-color);\n    }\n    \n    #header .aui-header .aui-nav .aui-button-primary {\n        background-color: var(--dracu-yellow);\n        color: var(--bg-color) !important;\n    }\n    \n    .wiki-content a, \n    .wiki-content a:link, \n    a,\n    a:focus,\n    #likes-section, \n    .label-list, \n    .aui-button .aui-icon, \n    .aui-button.aui-button-subtle,\n    #likes-section .aui-iconfont-like, \n    content .acs-nav-list .icon {\n        color: var(--dracu-purple) !important;\n    }\n    \n    #title-text a, h2, h1, h5 {\n        color: var(--dracu-pink) !important;\n    }\n    \n    #title-text a {\n        color: var(--dracu-pink);\n        font-weight: 800;\n    }\n    \n    .page-metadata, .page-metadata ul li a:link {\n        color: var(--fg-color);\n    }\n    \n    .quick-comment-prompt,\n    body.mceContentBody {\n        background-color: var(--dracu-selection);\n        color: var(--fg-color);\n        border: 0px;\n    }\n    \n    #rte-toolbar {\n        background-color: var(--dracu-selection);\n        border-bottom: 0px;\n    }\n    \n    #rte-savebar {\n        border-top: 0px;\n    }\n    \n    .aui-button.aui-button-primary {\n        background-color: var(--dracu-orange);\n    }\n    \n    #comments-section .comment-body form .editor-container {\n        border: 0px;\n    }\n    \n    .confluence-information-macro-warning, \n    .confluence-information-macro-tip {\n        background-color: var(--dracu-yellow);\n        border: 0px;\n    }",
+				"start": 65,
+				"regexps": [
+					"https://confluence.oraclecorp.com/.+"
+				]
+			}
+		],
+		"usercssData": {
+			"name": "fjacosta_mx Oracle Confluence Dracula Theme",
+			"namespace": "github.com/openstyles/stylus",
+			"version": "1.0.0",
+			"description": "A new userstyle",
+			"author": "Me",
+			"vars": {
+				"bg-color": {
+					"type": "color",
+					"label": "BG color",
+					"name": "bg-color",
+					"value": null,
+					"default": "rgb(40, 42, 54)",
+					"options": null
+				},
+				"fg-color": {
+					"type": "color",
+					"label": "FG color",
+					"name": "fg-color",
+					"value": null,
+					"default": "rgb(248, 248, 242)",
+					"options": null
+				},
+				"dracu-current": {
+					"type": "color",
+					"label": "Dracula current",
+					"name": "dracu-current",
+					"value": null,
+					"default": "rgb(68, 71, 90)",
+					"options": null
+				},
+				"dracu-comment": {
+					"type": "color",
+					"label": "Dracula comment",
+					"name": "dracu-comment",
+					"value": null,
+					"default": "rgb(98, 114, 164)",
+					"options": null
+				},
+				"dracu-selection": {
+					"type": "color",
+					"label": "Dracula selection",
+					"name": "dracu-selection",
+					"value": null,
+					"default": "rgb(68, 71, 90)",
+					"options": null
+				},
+				"dracu-purple": {
+					"type": "color",
+					"label": "Dracula Purple",
+					"name": "dracu-purple",
+					"value": null,
+					"default": "rgb(189, 147, 249)",
+					"options": null
+				},
+				"dracu-orange": {
+					"type": "color",
+					"label": "Dracula Orange",
+					"name": "dracu-orange",
+					"value": null,
+					"default": "rgb(255, 184, 108)",
+					"options": null
+				},
+				"dracu-pink": {
+					"type": "color",
+					"label": "Dracula Pink",
+					"name": "dracu-pink",
+					"value": null,
+					"default": "rgb(255, 121, 198)",
+					"options": null
+				},
+				"dracu-cyan": {
+					"type": "color",
+					"label": "Dracula Cyan",
+					"name": "dracu-cyan",
+					"value": null,
+					"default": "rgb(139, 233, 253)",
+					"options": null
+				},
+				"dracu-yellow": {
+					"type": "color",
+					"label": "Dracula Yellow",
+					"name": "dracu-yellow",
+					"value": null,
+					"default": "rgb(241, 250, 140)",
+					"options": null
+				}
+			}
+		},
+		"author": "Me",
+		"description": "A new userstyle",
+		"name": "fjacosta_mx Oracle Confluence Dracula Theme",
+		"updateDate": 1576178698096,
+		"id": 4
+	}
+]
